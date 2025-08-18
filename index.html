@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word to PDF Converter</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+
+<!-- Animated Background -->
+<div id="bg-canvas"></div>
+
+<!-- Header -->
+<header>
+  <h2 class="header-title">Word to PDF Converter</h2>
+</header>
+
+<!-- Main Container -->
+<div class="container">
+  <div id="drop-area" class="drop-area">
+    <p>Drag & Drop your Word files here</p>
+    <input type="file" id="fileElem" multiple accept=".doc,.docx">
+    <button id="fileSelect">Select Files</button>
+  </div>
+  <div id="file-list"></div>
+  <button id="convertBtn" class="convert-btn">Convert to PDF</button>
+  <div id="download-links"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Made by Aditya Singh</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="background.js"></script>
+</body>
+</html>
